@@ -35,7 +35,7 @@ provider.add_span_processor(processor)
 
 #X-RAY --------------------------------------------------------------------
 xray_url = os.getenv("AWS_XRAY_URL")
-xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
+xray_recorder.configure(service='Cruddur', dynamic_naming=xray_url)
 
 simple_processor = SimpleSpanProcessor(ConsoleSpanExporter())
 provider.add_span_processor(simple_processor)
