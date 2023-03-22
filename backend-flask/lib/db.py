@@ -97,7 +97,7 @@ class Db:
     ) array_row);
     """
     return sql
-  def print_sql_err(err):
+  def print_sql_err(self,err):
     # get details about the exception
     err_type, err_obj, traceback = sys.exc_info()
 
