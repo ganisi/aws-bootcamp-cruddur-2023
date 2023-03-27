@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
--e
+set -e
 
 CYAN='\033[1;36m'
 NO_COLOR='\033[0m'
