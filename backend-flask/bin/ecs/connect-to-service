@@ -24,9 +24,9 @@ aws ecs execute-command  \
 --interactive 
 
 aws ecs execute-command  \
---region $AWS_DEFAULT_REGION \
+--region us-east-1 \
 --cluster cruddur \
---task &TASK_ID \
---container &CONTAINER_NAME \
+--task 7536da2e258f422ebf0206b79e005165 \
+--container backend-flask \
 --command "/bin/bash" \
 --interactive 
