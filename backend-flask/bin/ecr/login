@@ -1,0 +1,6 @@
+#! /usr/bin/bash
+
+export AWS_DEFAULT_REGION="us-east-1"
+export AWS_ACCOUNT_ID="362765619818"
+
+aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com"
