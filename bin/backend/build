@@ -8,5 +8,5 @@ BACKEND_FLASK_PATH="$PROJECT_PATH/backend-flask"
 
 docker build \
 -f "$BACKEND_FLASK_PATH/Dockerfile.prod" \
--t backend-flask \
+-t backend-flask-prod \
 "$BACKEND_FLASK_PATH/."
