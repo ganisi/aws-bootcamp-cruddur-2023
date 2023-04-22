@@ -18,16 +18,16 @@
             },
             "s3": {
                 "s3SchemaVersion": "1.0",
-                "configurationId": "EXAMPLEConfig",
+                "configurationId": "testConfigRule",
                 "bucket": {
-                    "name": "example-bucket",
+                    "name": "assets.cruddurapp.link",
                     "ownerIdentity": {
                         "principalId": "EXAMPLE"
                     },
-                    "arn": "arn:aws:s3:::example-bucket"
+                    "arn": "arn:aws:s3:::assets.cruddurapp.link"
                 },
                 "object": {
-                    "key": "example-object.txt",
+                    "key": "avatars/original/data.jpg",
                     "size": 1024,
                     "eTag": "EXAMPLEETAG",
                     "sequencer": "EXAMPLESEQUENCER"
