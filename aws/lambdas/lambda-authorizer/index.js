@@ -16,21 +16,21 @@ exports.handler = async (event) => {
 
   // const jwt = event.headers.authorization;
   const auth = event.headers.authorization;
-  const jwt = auth.split(" ")[1];
+  const jwt = auth.split(" ")[1]
 
   try {
     const payload = await jwtVerifier.verify(jwt);
     console.log("Access allowed. JWT payload:", payload);
     return {
-      isAuthorized: true,
-      "context": {
-          "sub": payload.sub
-      },
-    };    
+        isAuthorized: true,
+        "context": {
+            "sub": payload.sub
+        },
+    };
   } catch (err) {
     console.error("Access forbidden:", err);
     return {
-      isAuthorized: false,
+        isAuthorized: false,
     };
   }
 };
